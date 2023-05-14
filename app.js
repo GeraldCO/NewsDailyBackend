@@ -1,7 +1,7 @@
-require('dotenv').config()
-const express = require('express');
-const { ApolloServer } = require('@apollo/server');
-const { connectMongodb } = require('./src/config/db');
+import 'dotenv/config.js'
+import express from 'express';
+import { ApolloServer } from '@apollo/server';
+import { connectMongodb } from './src/config/db.js';
 
 const app = express();
 connectMongodb()

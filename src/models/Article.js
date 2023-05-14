@@ -1,4 +1,4 @@
-const { Schema, model } = require('mongoose')
+import { Schema, model } from 'mongoose';
 
 const articlesSchema = new Schema({
     title: String,
@@ -14,4 +14,6 @@ const articlesSchema = new Schema({
     keywords: [String]
 })
 
-module.exports = model('Article', articlesSchema)
+const Article = model('Article', articlesSchema);
+
+export default Article;
