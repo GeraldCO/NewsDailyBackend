@@ -1,8 +1,8 @@
 import { Schema, model } from 'mongoose';
 
-const autorSchema = new Schema({
+const authorSchema = new Schema({
     name: String,
-    lasName: String,
+    lastName: String,
     email: String,
     photo: String,
     bio: String,
@@ -13,6 +13,6 @@ const autorSchema = new Schema({
     }
 })
 
-const Autor = model('Autor', autorSchema);
+const Author = model('Author', authorSchema);
 
-export default Autor;
+export default Author;
